@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProgressBar from './ProgressBar';
+import { StyledUploadForm } from '../styles/styles';
 
 function UploadForm() {
   const [file, setFile] = useState(null);
@@ -19,7 +20,7 @@ function UploadForm() {
   }
 
   return (
-    <form>
+    <StyledUploadForm>
       <label>
         <input type="file" onChange={changeHandler} />
         <span>+</span>
@@ -29,7 +30,7 @@ function UploadForm() {
         {file && <div>{file.name}</div>}
         {file && <ProgressBar file={file} setFile={setFile} />}
       </div>
-    </form>
+    </StyledUploadForm>
   );
 }
 

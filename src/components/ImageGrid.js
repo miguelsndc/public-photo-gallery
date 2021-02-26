@@ -1,11 +1,12 @@
 import React from 'react';
 import useFirestore from '../hooks/UseFirestore';
+import { StyledImageGrid } from '../styles/styles';
 
 function ImageGrid({ setSelectedImg }) {
   const { docs } = useFirestore('images');
   console.log(docs);
   return (
-    <div className="img-grid">
+    <StyledImageGrid>
       {docs &&
         docs.map((doc) => {
           return (
@@ -18,7 +19,7 @@ function ImageGrid({ setSelectedImg }) {
             </div>
           );
         })}
-    </div>
+    </StyledImageGrid>
   );
 }
 

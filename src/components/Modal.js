@@ -1,15 +1,15 @@
 import React from 'react';
+import { StyledBackdrop } from '../styles/styles';
 
 function Modal({ selectedImg, setSelectedImg }) {
   function handleModalClose(e) {
     if (e.target.classList.contains('backdrop')) setSelectedImg(null);
   }
-
-  console.log(selectedImg);
+  // i couldnt find a way to close the modal, so i added a classname, ill refactor it as soon as possible
   return (
-    <div className="backdrop" onClick={handleModalClose}>
+    <StyledBackdrop onClick={handleModalClose} className="backdrop">
       <img src={selectedImg} alt="large pic" />
-    </div>
+    </StyledBackdrop>
   );
 }
 

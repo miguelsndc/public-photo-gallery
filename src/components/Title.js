@@ -1,13 +1,14 @@
 import React from 'react';
+import { StyledTitle } from '../styles/styles';
 
-const Title = () => {
+const TitleComp = () => {
   return (
-    <div className="title">
+    <StyledTitle>
       <h1>Photo Gallery</h1>
       <h2>Public Photo Gallery</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
+    </StyledTitle>
   );
 };
 
-export default Title;
+export default TitleComp;
