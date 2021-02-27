@@ -1,12 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ProgressBar from './ProgressBar';
-import { StyledUploadForm } from '../styles/styles';
+import { StyledUploadForm } from '../styles/UploadForm.sc';
 
 function UploadForm() {
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
 
   const allowedTypes = ['image/png', 'image/jpeg'];
+
+  const errorTypes = {
+    INVALID_IMAGE_TYPE: 'Please select an valid file type ( PNG / JPEG )',
+  };
+
+  function showErrorMessage(interval, errorMsg) {
+    // interval in ms
+    setError(errorMsg);
+    setInterval(() => {
+      setError('');
+    }, interval);
+  }
 
   function changeHandler(e) {
     let selected = e.target.files[0];
@@ -15,7 +27,7 @@ function UploadForm() {
       setError('');
     } else {
       setFile(null);
-      setError('Please select an valid file type ( PNG / JPEG )');
+      showErrorMessage(3000, errorTypes.INVALID_IMAGE_TYPE);
     }
   }
 
