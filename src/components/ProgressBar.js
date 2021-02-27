@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import useStorage from '../hooks/useStorage';
-import { StyledProgressBar } from '../styles/styles';
+import { StyledProgressBar } from '../styles/ProgressBar.sc';
 
 function ProgressBar({ file, setFile }) {
   const { imageUrl, progress } = useStorage(file);

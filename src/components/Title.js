@@ -1,12 +1,15 @@
 import React from 'react';
-import { StyledTitle } from '../styles/styles';
+import { StyledTitle } from '../styles/Title.sc';
 
-const TitleComp = () => {
+const TitleComp = ({ isDarkThemeEnabled, setIsDarkThemeEnabled }) => {
   return (
     <StyledTitle>
+      <button onClick={() => setIsDarkThemeEnabled(!isDarkThemeEnabled)}>
+        dark theme
+      </button>
       <h1>Photo Gallery</h1>
       <h2>Public Photo Gallery</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Share your jobs, your feelings and your art.</p>
     </StyledTitle>
   );
 };

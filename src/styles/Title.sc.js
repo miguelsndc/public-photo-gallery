@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledTitle = styled.div`
   h1 {
     color: ${(props) => props.theme.primary};
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     font-weight: normal;
   }
@@ -15,6 +15,6 @@ export const StyledTitle = styled.div`
 
   h2 {
     margin-top: 60px;
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 `;

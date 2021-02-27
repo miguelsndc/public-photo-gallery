@@ -14,7 +14,8 @@ export const StyledImageGrid = styled.div`
   }
   .img-wrap img {
     max-width: 100%;
-    border-radius: 4px;
+    border-radius: 8px;
+    box-shadow: 3px 5px 12px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
 

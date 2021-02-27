@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledBackdrop } from '../styles/styles';
+import { StyledBackdrop } from '../styles/BackDrop.sc';
 
 function Modal({ selectedImg, setSelectedImg }) {
   function handleModalClose(e) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import useFirestore from '../hooks/UseFirestore';
-import { StyledImageGrid } from '../styles/styles';
+import { StyledImageGrid } from '../styles/ImageGrid.sc';
 
 function ImageGrid({ setSelectedImg }) {
   const { docs } = useFirestore('images');

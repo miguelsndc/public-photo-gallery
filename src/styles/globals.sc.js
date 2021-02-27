@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     background: ${(props) => props.theme.background};
     color: ${(props) => props.theme.secondary};
+    transition: all .2s;
   }
 `;
 
