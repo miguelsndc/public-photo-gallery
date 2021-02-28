@@ -8,7 +8,7 @@ import Modal from './components/Modal';
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './styles/globals.sc';
-import { StyledApp } from './styles/App.sc';
+import { Container } from './styles/App.sc';
 import { lightTheme } from './styles/LightTheme.sc';
 import { darkTheme } from './styles/DarkTheme.sc';
 
@@ -17,7 +17,7 @@ function App() {
   const [isDarkThemeEnabled, setIsDarkThemeEnabled] = useState(false);
 
   return (
-    <StyledApp>
+    <Container>
       <ThemeProvider theme={isDarkThemeEnabled ? darkTheme : lightTheme}>
         <GlobalStyle />
         <Title
@@ -30,7 +30,7 @@ function App() {
           <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
         )}
       </ThemeProvider>
-    </StyledApp>
+    </Container>
   );
 }
 

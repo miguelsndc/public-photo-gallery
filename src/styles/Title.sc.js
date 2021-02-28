@@ -17,4 +17,11 @@ export const StyledTitle = styled.div`
     margin-top: 60px;
     font-size: 2.3rem;
   }
+
+  & > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
