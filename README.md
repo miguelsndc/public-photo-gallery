@@ -5,6 +5,11 @@
 <h1 align="center">Public Photo Gallery</h1>
 
 <p align="center">
+  <a href="https://public-photo-gallery.netlify.app/" target="_blank">
+    <img alt="Demo on Netlify" src="https://res.cloudinary.com/dx3vxwusq/image/upload/v1611013043/netflify_nahquj.png">
+  </a>
+</p>
+<p align="center">
   <a href="#language">
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/miguelsndc/public-photo-gallery">
   </a>
@@ -26,9 +31,11 @@
   </a>
 </p>
 
+
 <h4 align="center">
  This is a project developed by me with Brad from The Net Ninja Channel as instructor ( Link Below ) 
 </h4>
+
 
 
 ## 🚀 Technologies 
