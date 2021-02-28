@@ -1,5 +1,5 @@
 <p align=center>
-  <img src="https://res.cloudinary.com/db9t2jrhe/image/upload/v1614539328/photo-camera_fkgqm8.svg" alt="Logo move-it" width="200">
+  <img src="https://res.cloudinary.com/db9t2jrhe/image/upload/v1614539328/photo-camera_fkgqm8.svg" alt="Camera Icon" width="200">
 </p>
 
 <h1 align="center">Public Photo Gallery</h1>
@@ -14,15 +14,15 @@
   </a>
   
   <a href="https://github.com/miguelsndc/public-photo-gallery/issues">
-    <img src="https://img.shields.io/bitbucket/issues-raw/MateusJSouza/MoveIt" alt="Issues">
+    <img src="https://img.shields.io/bitbucket/issues-raw/miguelsndc/public-photo-gallery" alt="Issues">
   </a>
   
   <a href="https://github.com/miguelsndc/public-photo-gallery/graphs/commit-activity">
-    <img src="https://img.shields.io/github/last-commit/MateusJSouza/MoveIt" alt="Últimos commits">
+    <img src="https://img.shields.io/github/last-commit/miguelsndc/public-photo-gallery" alt="Últimos commits">
   </a>
   
   <a href="https://github.com/miguelsndc/public-photo-gallery/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/MateusJSouza/MoveIt" alt="Licença MIT">
+    <img src="https://img.shields.io/github/license/miguelsndc/public-photo-gallery" alt="Licença MIT">
   </a>
 </p>
 
@@ -30,10 +30,6 @@
  This is a project developed by me with Brad from The Net Ninja Channel as instructor ( Link Below ) 
 </h4>
 
-<p align="center"> 
-  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
-</p>
 
 ## 🚀 Technologies 
 This project was developed by me with the following technologies:
@@ -52,7 +48,7 @@ This project was developed by me with the following technologies:
 ✔ Custom Hooks to manage Storage and Firestore<br>
 
 
-## 📚 What differs this project from the other ones ?
+## 🔥 What differs this project from the other ones ?
 
 ✔ Implementation of Styled Components<br>
 ✔ Theming (Dark / Light)<br>
