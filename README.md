@@ -83,6 +83,8 @@ $ yarn // or npm install
 
 # Running the application in development mode:
 $ yarn start // or npm start
+
+# 💖 Enjoy 💖
   
 ```
 
