@@ -62,6 +62,30 @@ This project was developed by me with the following technologies:
 ✔ Pinterest-like Grid System<br>
 ✔ Better error handling on image upload.<br>
 
+## :rocket: Wanna see it running locally on your machine ?
+
+Before anything, you must have these things installed on your machine:
+- [Node JS](https://nodejs.org/en/)
+- [Git](https://git-scm.com/)
+- A code editor, [VS Code](https://code.visualstudio.com/) is recommended
+
+Now, do the following steps on your terminal:
+
+```bash
+# Clone the repository:
+$ git clone https://github.com/miguelsndc/Public-Photo-Gallery.git
+
+# Enter the project folder:
+$ cd Public-Photo-Gallery
+  
+# Install the dependencies:
+$ yarn // or npm install
+
+# Running the application in development mode:
+$ yarn start // or npm start
+  
+```
+
 ## 📝 License
 
 This project is under the MIT license. See the [LICENSE](https://github.com/miguelsndc/public-photo-gallery/blob/main/LICENSE) for more information.
