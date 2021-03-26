@@ -60,7 +60,6 @@ This project was developed by me with the following technologies:
 ✔ Implementation of Styled Components<br>
 ✔ Theming (Dark / Light)<br>
 ✔ Pinterest-like Grid System<br>
-✔ Better error handling on image upload.<br>
 
 ## :rocket: Wanna see it running locally on your machine ?
 
