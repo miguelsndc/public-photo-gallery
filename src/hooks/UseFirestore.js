@@ -5,7 +5,7 @@ function useFirestore(collection) {
   const [docs, setDocs] = useState([]);
 
   useEffect(() => {
-    const unsub = _firestore
+    const unsubscribe = _firestore
       .collection(collection)
       .orderBy('createdAt', 'desc')
       .onSnapshot((snap) => {
@@ -16,7 +16,7 @@ function useFirestore(collection) {
         setDocs(documents);
       });
 
-    return () => unsub();
+    return () => unsubscribe();
   }, [collection]);
 
   return { docs };
