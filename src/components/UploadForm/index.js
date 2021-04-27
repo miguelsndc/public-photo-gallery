@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import ProgressBar from './ProgressBar';
-import { StyledUploadForm } from '../styles/UploadForm.sc';
-import errorTypes from '../error/errorTypes';
+import ProgressBar from '../ProgressBar';
+import errorMessages from '../../error/errorMessages';
+
+import { FormField, ProgressInfo, Error, UploadButton } from './styles';
 
 function UploadForm() {
   const [file, setFile] = useState(null);
@@ -24,22 +25,22 @@ function UploadForm() {
       setError('');
     } else {
       setFile(null);
-      showErrorMessage(3000, errorTypes.INVALID_IMAGE_TYPE);
+      showErrorMessage(3000, errorMessages.INVALID_IMAGE_TYPE);
     }
   }
 
   return (
-    <StyledUploadForm>
-      <label>
+    <FormField>
+      <UploadButton>
         <input type="file" onChange={changeHandler} />
         <span>+</span>
-      </label>
-      <div className="output">
-        {error && <div className="error">{error}</div>}
+      </UploadButton>
+      <ProgressInfo>
+        {error && <Error>{error}</Error>}
         {file && <div>{file.name}</div>}
         {file && <ProgressBar file={file} setFile={setFile} />}
-      </div>
-    </StyledUploadForm>
+      </ProgressInfo>
+    </FormField>
   );
 }
 
