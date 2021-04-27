@@ -1,5 +1,5 @@
 import React from 'react';
-import useFirestore from '../../hooks/useFirestore';
+import useFirestore from '../../hooks/UseFirestore';
 import { Container, ImageWrapper } from './styles';
 
 function ImageGrid({ setSelectedImg }) {
