@@ -21,7 +21,7 @@ export const UploadButton = styled.label`
   border: 3px solid ${(props) => props.theme.primary};
   border-radius: 50%;
   margin: 10px auto;
-  line-height: 40px;
+  line-height: 38px;
   color: ${(props) => props.theme.primary};
   font-weight: bold;
   font-size: 24px;
