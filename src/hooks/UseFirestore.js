@@ -3,7 +3,7 @@ import { _firestore } from '../firebase/config';
 
 function useFirestore(collection) {
   const [docs, setDocs] = useState([]);
-
+  // a
   useEffect(() => {
     const unsubscribe = _firestore
       .collection(collection)
