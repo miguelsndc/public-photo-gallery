@@ -4,7 +4,6 @@ import { StyledImageGrid } from '../styles/ImageGrid.sc';
 
 function ImageGrid({ setSelectedImg }) {
   const { docs } = useFirestore('images');
-  console.log(docs);
   return (
     <StyledImageGrid>
       {docs &&
